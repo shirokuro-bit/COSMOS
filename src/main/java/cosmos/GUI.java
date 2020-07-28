@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
 public class GUI implements ActionListener {
 
@@ -38,6 +39,21 @@ public class GUI implements ActionListener {
         frame = new JFrame( "在籍システム" );
         frame.setBounds( 50, 50, 900,900 );
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+
+        //テーブルの作成
+        //String[] [] tabledata = new String[200][2];
+
+
+
+        //String[] header = {"氏名","在室"};
+        //DefaultTableModel model = new DefaultTableModel(header, 0);
+        //table1 = new JTable(model);
+        //table1.setEnabled(false);
+
+
+
+
+
 
         // ラベルの作成
         label1 = new JLabel(t1+zaiseki);
