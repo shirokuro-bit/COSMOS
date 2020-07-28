@@ -6,10 +6,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public class GUI implements ActionListener {
 
@@ -21,6 +18,7 @@ public class GUI implements ActionListener {
     JLabel label4;	// ラベル
     JLabel label5;	// ラベル
     JLabel label6;	// ラベル
+    JTable table1;  // テーブル
 
     JButton button1;
     JButton button2;
