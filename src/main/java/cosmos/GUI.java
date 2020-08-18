@@ -20,7 +20,6 @@ public class GUI implements ActionListener {
     JLabel label5;	// ラベル
     JLabel label6;	// ラベル
     JTable table1;  // テーブル
-    String a = "a";
 
     JButton button1;
     JButton button2;
