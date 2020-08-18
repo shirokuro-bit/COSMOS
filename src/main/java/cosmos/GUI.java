@@ -55,6 +55,7 @@ public class GUI implements ActionListener {
 
 
 
+
         // ラベルの作成
         label1 = new JLabel(t1+zaiseki);
         label1.setFont(new Font("serif", Font.PLAIN, 30));
