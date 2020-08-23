@@ -10,12 +10,13 @@ public class ConnectDB extends Thread{
     Statement stmt = null;
     //SQL接続用情報
     String driver = "org.mariadb.jdbc.Driver";
-    String url = "jdbc:mariadb://192.168.2.104/mysql";
-    String usern = "root";
-    String password = "password";
+    String url = "jdbc:mariadb://192.168.11.7/room_management";
+    String usern = "COSMOS";
+    String password = "PASSWORD";
 
     private int data = 0;//
     private ArrayList<String> test = new ArrayList<>();
+    String[][] Data = new String[3][3];
 
     public ConnectDB() {
         //JDBCドライバ
@@ -39,14 +40,25 @@ public class ConnectDB extends Thread{
 
         //テーブルデータ取得
         try {
-            String sql = "SELECT * FROM ○○○○";//○○○○はテーブル名
+            String sql = "SELECT time, name, zaishitu FROM zaishitu,username WHERE zaishitu.rfid_id=username.rfid_id";
             //stmt = conn.createStatement();
             stmt = conn.prepareStatement(sql);
             ResultSet hrs = stmt.executeQuery(sql);
 
             while (hrs.next()) {
                 test.add(hrs.getString(1));
+                test.add(hrs.getString(2));
+                test.add(hrs.getString(3));
             }
+            System.out.print(test.get(0));
+            System.out.print(test.get(1));
+            System.out.println(test.get(2));
+            System.out.print(test.get(3));
+            System.out.print(test.get(4));
+            System.out.println(test.get(5));
+            System.out.print(test.get(6));
+            System.out.print(test.get(7));
+            System.out.println(test.get(8));
         }catch (Exception e) {
             e.printStackTrace();
         }
