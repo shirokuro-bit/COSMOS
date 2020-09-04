@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class ConnectDB {
     Connection conn = null;
     Statement stmt = null;
+
     //SQL接続用情報
     String SQL_driver = "org.mariadb.jdbc.Driver";
     String SQL_url = "jdbc:mariadb://192.168.11.7/room_management";
@@ -73,7 +74,9 @@ public class ConnectDB {
                 if (stmt != null) {
                     conn.close();
                 }
-            } catch (SQLException se) {} // do nothing
+            } catch (SQLException se) {
+                se.printStackTrace();
+            } // do nothing
             try {
                 if (conn != null) {
                     conn.close();
