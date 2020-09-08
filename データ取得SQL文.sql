@@ -8,7 +8,7 @@ inner join(
 ) as T2
 on T1.rfid_id=T2.rfid_id;
 
-参考サイト
-GROUP BYとHAVINGで最新日付データを取得する
-https://lightgauge.net/database/sqlserver/1672/
-https://sites.google.com/site/nssvdabb/sql/join
+--参考サイト
+--GROUP BYとHAVINGで最新日付データを取得する
+--https://lightgauge.net/database/sqlserver/1672/
+--https://sites.google.com/site/nssvdabb/sql/join
