@@ -90,9 +90,13 @@ public class ConnectDB {
     }
 
     // setter: データ数
-    public void setData(int i) {this.data = i;}
+    public void setData(int i) {
+        this.data = i;
+    }
     // getter: データ数
-    public int getData(){return this.data;}
+    public int getData(){
+        return this.data;
+    }
     // getter: フィールドデータ
     public String getDate(int i) {
         return date.get(i);
