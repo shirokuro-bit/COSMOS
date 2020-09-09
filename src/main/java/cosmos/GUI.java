@@ -33,6 +33,7 @@ public class GUI implements ActionListener {
     String zaiseki = "はいません";
     String iru = "はいます";
 
+
     public GUI(){
 
         // フレームの作成
@@ -42,6 +43,10 @@ public class GUI implements ActionListener {
 
         //テーブルの作成
         //String[] [] tabledata = new String[200][2];
+
+        //for(int i = 0; i<;i++){
+        	//tabledata[][]={},{},{},{},{},{}
+        //};
 
 
 
