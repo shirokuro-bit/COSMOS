@@ -44,9 +44,9 @@ public class GUI implements ActionListener {
         //テーブルの作成
         String[] [] tabledata = new String[200][2];
 
-        for(int i = 0; i<;i++){
+        /*for(int i = 0; i>7;i++){
         	tabledata[][]={1,0},{2,0},{3,0},{4,0},{5,0},{6,0}
-        };
+        }*/;
 
 
 
