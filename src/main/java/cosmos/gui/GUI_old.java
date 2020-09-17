@@ -1,4 +1,4 @@
-package cosmos;
+package cosmos.gui;
 
 import java.awt.Container;
 import java.awt.Font;
@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-public class GUI implements ActionListener {
+public class GUI_old implements ActionListener {
 
 
     JFrame frame;	// フレーム
@@ -34,7 +34,7 @@ public class GUI implements ActionListener {
     String iru = "はいます";
 
 
-    public GUI(){
+    public GUI_old(){
 
         // フレームの作成
         frame = new JFrame( "在籍システム" );
