@@ -11,7 +11,6 @@ import javax.swing.table.DefaultTableModel;
 
 public class GUI_old implements ActionListener {
 
-
     JFrame frame;	// フレーム
     JLabel label1;	// ラベル
     JLabel label2;	// ラベル
@@ -33,7 +32,6 @@ public class GUI_old implements ActionListener {
     String zaiseki = "はいません";
     String iru = "はいます";
 
-
     public GUI_old(){
 
         // フレームの作成
@@ -48,18 +46,10 @@ public class GUI_old implements ActionListener {
         	tabledata[][]={1,0},{2,0},{3,0},{4,0},{5,0},{6,0}
         }*/;
 
-
-
         String[] header = {"氏名","在室"};
         DefaultTableModel model = new DefaultTableModel(header, 0);
         table1 = new JTable(model);
         table1.setEnabled(false);
-
-
-
-
-
-
 
         // ラベルの作成
         //label1 = new JLabel(t1+zaiseki);
@@ -75,8 +65,8 @@ public class GUI_old implements ActionListener {
         //label4.setFont(new Font("serif", Font.PLAIN, 30));
 
         //label5 = new JLabel(t5+zaiseki);
-        //label5.setFont(new Font("serif", Font.PLAIN, 30))
-        //;
+        //label5.setFont(new Font("serif", Font.PLAIN, 30));
+
         //label6 = new JLabel(t6+zaiseki);
         //label6.setFont(new Font("serif", Font.PLAIN, 30));
 
@@ -112,7 +102,6 @@ public class GUI_old implements ActionListener {
 
     }
 
-
     public void actionPerformed( ActionEvent e ) {
         if(e.getSource() == button1) {
             label1.setText(t1+iru);
@@ -131,8 +120,4 @@ public class GUI_old implements ActionListener {
             label6.setText(t6+zaiseki);
         }
     }
-
-
-
-
 }

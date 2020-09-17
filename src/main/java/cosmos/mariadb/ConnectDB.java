@@ -1,4 +1,4 @@
-package cosmos;
+package cosmos.mariadb;
 
 import org.mariadb.jdbc.internal.util.constant.Version;
 
@@ -11,7 +11,7 @@ public class ConnectDB {
 
     //SQL接続用情報
     String SQL_driver = "org.mariadb.jdbc.Driver";
-    String SQL_url = "jdbc:mariadb://192.168.11.7/room_management";
+    String SQL_url = "jdbc:mariadb://localhost/room_management";
     String SQL_user = "COSMOS";
     String SQL_password = "PASSWORD";
 
@@ -19,7 +19,6 @@ public class ConnectDB {
     private ArrayList<String> date = new ArrayList<>();
     private ArrayList<String> user = new ArrayList<>();
     private ArrayList<String> zaishitu = new ArrayList<>();
-
 
     public ConnectDB() {
         //JDBCドライバ
