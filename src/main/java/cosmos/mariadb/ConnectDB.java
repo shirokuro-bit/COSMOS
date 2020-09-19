@@ -86,6 +86,10 @@ public class ConnectDB {
         } //end try
 
         System.out.println("\nGoodbye!");
+
+        date.add("20200401");
+        user.add("○○先生");
+        zaishitu.add("0");
     }
 
     // setter: データ数
