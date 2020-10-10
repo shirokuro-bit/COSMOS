@@ -1,14 +1,11 @@
 package cosmos.gui;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
-import javafx.stage.Stage;
 import javafx.stage.Window;
 
 import java.io.IOException;
@@ -34,15 +31,7 @@ public class SignageFXMLController implements Initializable {
 
             //新しい画面を生成する
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("/scene.fxml"));
-
-                Scene scene = new Scene(root);
-                scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
-
-                Stage stage = new Stage();
-                stage.setScene(scene);
-                stage.setTitle("JavaFX and Gradle");
-                stage.show();
+                new GenerateWindow("/scene.fxml", "/styles.css", "JavaFX and Gradle");
             } catch (IOException e) {
                 e.printStackTrace();
             }

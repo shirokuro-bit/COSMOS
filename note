@@ -1,0 +1,14 @@
+JavaFX待機処理
+
+Task<Void> timer = new Task<Void>() {
+    @Override
+    protected Void call() throws Exception {
+    try {
+        Thread.sleep(1000 * 1 * 5);
+    }catch (InterruptedException e) {
+
+    }
+    return null;
+    }
+};
+new Thread(timer).start();

@@ -4,12 +4,9 @@ import cosmos.mariadb.ConnectDB;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
 import javafx.stage.Window;
 import javafx.util.Duration;
 
@@ -19,7 +16,7 @@ import java.util.ResourceBundle;
 
 public class FXMLController implements Initializable {
 
-    //ConnectDB connectDB = new ConnectDB();
+    ConnectDB connectDB = new ConnectDB();
 
     @FXML
     private Label label;
@@ -37,15 +34,7 @@ public class FXMLController implements Initializable {
 
                     //新しい画面を生成する
                     try {
-                        Parent root = FXMLLoader.load(getClass().getResource("/signage.fxml"));
-
-                        Scene scene = new Scene(root);
-                        scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
-
-                        Stage stage = new Stage();
-                        stage.setScene(scene);
-                        stage.setTitle("JavaFX and Gradle");
-                        stage.show();
+                        new GenerateWindow("/signage.fxml","/styles.css","JavaFX and Gradle");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -54,18 +43,3 @@ public class FXMLController implements Initializable {
         timer.play();
     }
 }
-/*
-Task<Void> timer = new Task<Void>() {
-    @Override
-    protected Void call() throws Exception {
-    try {
-        Thread.sleep(1000 * 1 * 5);
-    }catch (InterruptedException e) {
-
-    }
-    return null;
-    }
-};
-new Thread(timer).start();
-*/
-
