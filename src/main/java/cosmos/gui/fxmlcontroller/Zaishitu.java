@@ -1,15 +1,13 @@
-package cosmos.gui;
+package cosmos.gui.fxmlcontroller;
 
+import cosmos.gui.GenerateWindow;
 import cosmos.mariadb.ConnectDB;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
 import javafx.stage.Window;
 import javafx.util.Duration;
 
@@ -17,7 +15,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class FXMLController implements Initializable {
+public class Zaishitu implements Initializable {
 
     ConnectDB connectDB = new ConnectDB();
 
@@ -93,15 +91,7 @@ public class FXMLController implements Initializable {
 
                     //新しい画面を生成する
                     try {
-                        Parent root = FXMLLoader.load(getClass().getResource("/signage.fxml"));
-
-                        Scene scene = new Scene(root);
-                        scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
-
-                        Stage stage = new Stage();
-                        stage.setScene(scene);
-                        stage.setTitle("JavaFX and Gradle");
-                        stage.show();
+                        new GenerateWindow("/signage.fxml", "/styles.css", "JavaFX and Gradle");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

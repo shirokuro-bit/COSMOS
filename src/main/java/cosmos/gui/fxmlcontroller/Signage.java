@@ -1,5 +1,6 @@
-package cosmos.gui;
+package cosmos.gui.fxmlcontroller;
 
+import cosmos.gui.GenerateWindow;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -12,7 +13,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SignageFXMLController implements Initializable {
+public class Signage implements Initializable {
 
     @FXML
     private MediaView mediaView;
@@ -31,7 +32,7 @@ public class SignageFXMLController implements Initializable {
 
             //新しい画面を生成する
             try {
-                new GenerateWindow("/scene.fxml", "/styles.css", "JavaFX and Gradle");
+                new GenerateWindow("/zaishitu.fxml", "/styles.css", "JavaFX and Gradle");
             } catch (IOException e) {
                 e.printStackTrace();
             }
