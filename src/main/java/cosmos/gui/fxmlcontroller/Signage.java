@@ -9,6 +9,7 @@ import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.stage.Window;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,7 +21,8 @@ public class Signage implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Media media = new Media("https://nompor.com/wp-content/uploads/2018/01/sample2.mp4");
+        File file = new File("movie/sample2.mp4");
+        Media media = new Media(file.toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
         mediaPlayer.play();
