@@ -1,5 +1,6 @@
 package cosmos.mariadb;
 
+import cosmos.Run;
 import org.mariadb.jdbc.internal.util.constant.Version;
 
 import java.sql.*;
@@ -8,10 +9,11 @@ import java.util.ArrayList;
 public class ConnectDB {
     Connection conn = null;
     Statement stmt = null;
+    String DBAddress = Run.loadConfig.getDBAddress();
 
     //SQL接続用情報
     String SQL_driver = "org.mariadb.jdbc.Driver";
-    String SQL_url = "jdbc:mariadb://localhost/room_management";
+    String SQL_url = "jdbc:mariadb://" + DBAddress + "/room_management";
     String SQL_user = "COSMOS";
     String SQL_password = "PASSWORD";
 
