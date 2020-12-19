@@ -2,5 +2,5 @@
      -fx-font-size: xx-large;
      -fx-font-weight: bold;
      -fx-text-fill: #333333;
-     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+     -fx-effect: dropshadow( two-pass-box , daa520 , 1,0,0,1 );
 }
