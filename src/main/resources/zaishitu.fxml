@@ -38,18 +38,18 @@
                <font>
                   <Font size="20.0" />
                </font></Label>
-            <Label fx:id="label01" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-            <Label fx:id="label11" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="label02" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-            <Label fx:id="label12" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="label03" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-            <Label fx:id="label13" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label fx:id="label04" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="4" />
-            <Label fx:id="label14" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="label05" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="5" />
-            <Label fx:id="label15" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label fx:id="label06" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="6" />
-            <Label fx:id="label16" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="label00" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label fx:id="label01" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="label10" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label fx:id="label11" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="label20" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label fx:id="label21" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="label30" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Label fx:id="label31" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="label404" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Label fx:id="label41" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="label50" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Label fx:id="label51" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
          </children>
       </GridPane>
       <Label fx:id="label" alignment="CENTER" prefHeight="60.0" prefWidth="600.0" text="在室管理システム-COSMOS-" GridPane.columnIndex="1">
