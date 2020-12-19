@@ -10,7 +10,7 @@ public class LoadConfig {
 
         String strpass = "config/test.properties";
 
-        System.out.println(new File(".").getAbsolutePath());
+        //System.out.println(new File(".").getAbsolutePath());
 
         try {
             InputStream istream = new FileInputStream(strpass);

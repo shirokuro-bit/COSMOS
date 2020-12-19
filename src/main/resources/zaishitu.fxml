@@ -46,7 +46,7 @@
             <Label fx:id="label21" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label fx:id="label30" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="4" />
             <Label fx:id="label31" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="label404" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Label fx:id="label40" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="5" />
             <Label fx:id="label41" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Label fx:id="label50" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="6" />
             <Label fx:id="label51" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />

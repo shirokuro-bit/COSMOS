@@ -7,8 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class GenerateWindow {
-    public GenerateWindow(String FXMLPath, String CSSPath, String StageTitle) throws IOException {
+public class WindowGeneration {
+    public static String moviePath;
+    public WindowGeneration(String FXMLPath, String CSSPath, String StageTitle, String moviePath) throws IOException {
+        this.moviePath = moviePath;
         Parent root = FXMLLoader.load(getClass().getResource(FXMLPath));
 
         Scene scene = new Scene(root);

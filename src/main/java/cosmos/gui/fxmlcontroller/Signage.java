@@ -1,6 +1,6 @@
 package cosmos.gui.fxmlcontroller;
 
-import cosmos.gui.GenerateWindow;
+import cosmos.gui.WindowGeneration;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -21,8 +21,8 @@ public class Signage implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        File file = new File("movie/sample2.mp4");
-        Media media = new Media(file.toURI().toString());
+        File file1 = new File(WindowGeneration.moviePath);
+        Media media = new Media(file1.toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
         mediaPlayer.play();
@@ -34,7 +34,7 @@ public class Signage implements Initializable {
 
             //新しい画面を生成する
             try {
-                new GenerateWindow("/zaishitu.fxml", "/styles.css", "JavaFX and Gradle");
+                new WindowGeneration("/zaishitu.fxml", "/styles.css", "JavaFX and Gradle", null);
             } catch (IOException e) {
                 e.printStackTrace();
             }
