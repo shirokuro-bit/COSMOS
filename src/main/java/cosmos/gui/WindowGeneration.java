@@ -10,7 +10,7 @@ import java.io.IOException;
 public class WindowGeneration {
     public static String moviePath;
     public WindowGeneration(String FXMLPath, String CSSPath, String StageTitle, String moviePath) throws IOException {
-        this.moviePath = moviePath;
+        WindowGeneration.moviePath = moviePath;
         Parent root = FXMLLoader.load(getClass().getResource(FXMLPath));
 
         Scene scene = new Scene(root);
@@ -19,6 +19,8 @@ public class WindowGeneration {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle(StageTitle);
+        stage.setFullScreen(true);
+        stage.setFullScreenExitHint("");
         stage.show();
     }
 }

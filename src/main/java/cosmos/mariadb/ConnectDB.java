@@ -44,16 +44,7 @@ public class ConnectDB {
 
         //テーブルデータ取得
         try {
-            String sql =
-                    "select time, name, zaishitu from zaishitu as T1\n" +
-                    "inner join (\n" +
-                    "    select rfid_id as F1,max(time) as F2 from zaishitu group by rfid_id\n" +
-                    ") as T3\n" +
-                    "on T3.F1=T1.rfid_id and T3.F2=T1.time\n" +
-                    "inner join(\n" +
-                    "    select name,rfid_id from username\n" +
-                    ") as T2\n" +
-                    "on T1.rfid_id=T2.rfid_id";
+            String sql = "select * from html_output";
 
             stmt = conn.prepareStatement(sql);
             ResultSet hrs = stmt.executeQuery(sql);
